@@ -31,16 +31,11 @@ public class Main {
         }
 
 // 3-е задание
-        short year = 2384;
+        short year = 2025;
         year -= 1584;
-        if ((year%4) == 0)
-            if ((year%100) == 0)  //  определяет является данный год 100-летним
-                if ((year%400) == 0) { // определяет является данный год 400-летним
-                    System.out.println((year+1584)+" год является високосным\n"); }
-                else { System.out.println((year+1584)+" год не високосный\n"); }
-            else { System.out.println((year+1584)+" год является високосным\n"); }
-        else {
-            System.out.println((year+1584)+" год не високосный\n"); }
+        if ((year%4) == 0 && (year%100) != 0 || (year%400) == 0){
+           System.out.println((year+1584)+" год является високосным\n"); }
+        else { System.out.println((year+1584)+" год не високосный\n"); }
 
 // 4-е задание
         byte deliveryDistance = 0;
