@@ -1,30 +1,34 @@
 public class Main {
     public static void main(String[] args) {
 // 1-е задание
-        byte clientOs = 0;
+        byte clientOs = 1;
         switch (clientOs) {
-            case 0: System.out.println("Установите версию приложения для iOS по ссылке\n");
-            break;
-            case 1: System.out.println("Установите версию приложения для Android по ссылке\n");
-            break;
-            default: System.out.println("Приложение не может работать в Вашей ОС\n"); }
+            case 0:
+                System.out.println("Установите версию приложения для iOS по ссылке\n");
+                break;
+            case 1:
+                System.out.println("Установите версию приложения для Android по ссылке\n");
+                break;
+            default:
+                System.out.println("Приложение не может работать в Вашей ОС\n");
+        }
 
 // 2-е задание
         short clientDeviceYear = 2014;
-        if (clientDeviceYear < 2015)
-             switch (clientOs) {
-                    case 0: System.out.println("Установите облегченную версию приложения для iOS по ссылке\n");
-                        break;
-                    case 1: System.out.println("Установите облегченную версию приложения для Android по ссылке\n");
-                        break;
-                    default: System.out.println("Приложение не может работать в Вашей ОС\n"); }
-
-        else switch (clientOs) {
-                    case 0: System.out.println("Установите версию приложения для iOS по ссылке\n");
-                        break;
-                    case 1: System.out.println("Установите версию приложения для Android по ссылке\n");
-                        break;
-                    default: System.out.println("Приложение не может работать в Вашей ОС\n"); }
+        switch (clientOs) {
+            case 0:
+                if (clientDeviceYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке\n"); }
+                else { System.out.println("Установите версию приложения для iOS по ссылке\n"); }
+                break;
+            case 1:
+                if (clientDeviceYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для Android по ссылке\n"); }
+                else { System.out.println("Установите версию приложения для Android по ссылке\n"); }
+                break;
+            default:
+                System.out.println("Приложение не может работать в Вашей ОС\n");
+        }
 
 // 3-е задание
         short year = 2384;
@@ -49,7 +53,7 @@ public class Main {
                   else { System.out.println("Доставки нет\n"); }
 
 // 5-е задание
-        byte monthNumber = 10;
+        byte monthNumber = 13;
         switch (monthNumber) {
             case 12,1,2: System.out.println("сейчас зима\n");
             break;
