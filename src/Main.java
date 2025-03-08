@@ -49,7 +49,7 @@ public class Main {
                   else { System.out.println("Доставки нет\n"); }
 
 // 5-е задание
-        byte monthNumber = 12;
+        byte monthNumber = 10;
         switch (monthNumber) {
             case 12,1,2: System.out.println("сейчас зима\n");
             break;
